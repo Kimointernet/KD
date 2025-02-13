@@ -99,23 +99,8 @@
             if (event.ctrlKey && (event.key === "u" || event.key === "U")) {
                 event.preventDefault();
             }
-            if (event.ctrlKey && event.shiftKey && event.key === "I") {
-                event.preventDefault();
-            }
-            if (event.key === "F12") {
-                event.preventDefault();
-            }
         });
 
-        // تعطيل أدوات المطور عند فتحها
-        (function() {
-            var devtools = /./;
-            devtools.toString = function() {
-                alert("تم اكتشاف أدوات المطور! الرجاء إغلاقها.");
-                window.location.href = "about:blank";
-            };
-            console.log("%c", devtools);
-        })();
     </script>
 </head>
 <body>
