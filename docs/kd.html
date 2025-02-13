@@ -107,15 +107,7 @@
             }
         });
 
-        // تعطيل أدوات المطور عند فتحها
-        (function() {
-            var devtools = /./;
-            devtools.toString = function() {
-                alert("تم اكتشاف أدوات المطور! الرجاء إغلاقها.");
-                window.location.href = "about:blank";
-            };
-            console.log("%c", devtools);
-        })();
+       
     </script>
 </head>
 <body>
